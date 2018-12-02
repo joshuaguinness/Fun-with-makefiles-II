@@ -1,0 +1,9 @@
+report: format
+	./format PI1/text1.asc > report
+	./format PI2/text2.asc >> report
+	./format PI3/text3.asc >> report
+	./format PI4/text4.asc >> report
+	./format PI5/text5.asc >> report
+	rm format
+format: format.cpp
+	g++ -o format format.cpp
